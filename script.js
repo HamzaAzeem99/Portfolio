@@ -1,0 +1,1 @@
+alert('Assalam-u-alaikum')
