@@ -27,6 +27,12 @@ li a {
     color: white;
     font-size: 1em;
     text-decoration: none;
+ font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+    
 }
 
 li a:visited {
@@ -69,7 +75,7 @@ color: aliceblue;
 
 .port img {
     width: 170px;
-    height: 230px;
+    height: 250px;
     border-radius: 60px;
  filter: drop-shadow(1px 6px 20px blue);
  transform: scale(0.7);
@@ -100,6 +106,8 @@ color: aliceblue;
     opacity: 0;
     animation-delay: 3s;
     animation: text 2s ease-out forwards;
+     font-family: cursive;
+     margin-top: -20px;
 }
 @keyframes text {
     to{
@@ -265,27 +273,39 @@ color: aliceblue;
     font-size: 2em;
     position: relative;
     top: -150px;
-    left: 40px;
+    left: -158px;
     transition: 1s;
-    animation: p1 1s linear infinite;
+   
       color: red;
+         background-color: black;
+   border-radius: 20px ;
+   border: none;
+   padding: 10px 20px 10px 20px ;
 }
 .p2{
     font-size: 2em;
     position: relative;
     top: -150px;
-    left: 40px;
+    padding: 10px 20px 10px 20px ;
+    left: -158px;
     transition: 1s;
-    animation: p2 1s linear infinite;
+   
+       background-color: red;
+   border-radius: 20px ;
+   border: none;
 }
 .p3{
+    padding: 10px 20px 10px 20px ;
     font-size: 2em;
     position: relative;
     top: -150px;
-    left: 40px;
+   left: -158px;
     transition: 1s;
-    animation: para 1s linear infinite;
+    
    color: pink;
+   border: none;
+   background-color: red;
+   border-radius: 20px ;
 }
 
 .pro a{
@@ -333,44 +353,7 @@ input{
     padding: 10px 20px 10px 20px;
     margin-left: 30px;
 }
-@keyframes para {
-    0%{
-        transform: rotateZ(-10deg);
-    }
-    50%{
-        transform: rotateZ(10deg);
-       
-    }
-    100%{
-       transform: rotateZ(-10deg);
-    }
-}
 
-@keyframes p1 {
-    0%{
-        transform: rotateZ(-10deg);
-    }
-    50%{
-        transform: rotateZ(10deg);
-       
-    }
-    100%{
-       transform: rotateZ(-10deg);
-    }
-}
-
-@keyframes p2 {
-    0%{
-        transform: rotateZ(-10deg);
-    }
-    50%{
-        transform: rotateZ(10deg);
-       
-    }
-    100%{
-       transform: rotateZ(-10deg);
-    }
-}
 
 .box3{
     margin-left: -40px;
@@ -615,4 +598,193 @@ font-size: 0.7em;
     font-size: 0.2;
    }
    
+}
+
+@media screen and (max-width: 391px) {
+
+ 
+
+   .btn1{
+
+    padding: 3px 8px 3px 8px;
+  
+    margin-left: -5%;
+    margin-top: 2.5px;
+   }
+   li a{
+    font-size: 0.5em;
+   }
+   form{
+    margin-left: 2%;
+   }
+
+   .port img {
+    width: 250px;
+    height: 350px;
+    margin-left: -15px;
+ }
+
+ .text {
+    margin-left: 0.6em;
+  
+}
+}
+
+@media screen and (max-width: 924px) {
+
+  form{
+    margin-left: 38%;
+  }
+    .btn1{
+
+    padding: 5px 25px 5px 25px;
+  
+    margin-left: -2%;
+   }
+}
+
+@media screen and (max-width: 500px) and (min-width:419px) {
+
+  form{
+    margin-left: 3%;
+  }
+    .btn1{
+
+    padding: 5px 10px 5px 10px;
+  
+    margin-left: -3%;
+   }
+   
+   ul {
+   
+    margin-left: 50px;
+   }
+}
+
+@media screen and (max-width: 328px) {
+
+  form{
+    margin-left: 3%;
+  }
+    .btn1{
+
+    padding: 3px 10px 3px 10px;
+  
+    margin-left: -3%;
+   }
+   
+   ul {
+   
+    margin-left: 50px;
+   }
+
+      li a{
+    font-size: 0.3em;
+   }
+}
+
+
+@media screen and (min-width: 328px) and (max-width: 421px) {
+
+  form{
+    margin-left: 3%;
+  }
+    .btn1{
+
+    padding: 3px 10px 3px 10px;
+  
+    margin-left: -3%;
+   }
+   
+   ul {
+   
+    margin-left: 50px;
+   }
+
+      li a{
+    font-size: 0.3em;
+   }
+}
+
+@media screen and (min-width: 499px) and (max-width: 607px) {
+
+  form{
+    margin-left: 20%;
+  }
+    .btn1{
+
+    padding: 5px 20px 5px 20px;
+  
+    margin-left: -3%;
+   }
+   
+   ul {
+   
+    margin-left: 50px;
+   }
+
+      li a{
+    font-size: 0.7em;
+   }
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 443px) {
+
+
+    .port img {
+    width: 230px;
+    height: 300px;
+    border-radius: 40px;
+    margin-left: -40px;
+    
+}
+
+
+
+
+.text {
+    margin-left: -1em;
+     margin-top: 50px;
+}
+
+
+   
+   ul {
+   
+    margin-left: 35px;
+   }
+
+      li a{
+    font-size: 0.1em;
+   }
+
+     nav img {
+        width: 60px;
+     }
+}
+
+
+
+
+
+@media screen and (min-width: 607px) and (max-width: 652px) {
+    .btn1{
+
+    padding: 5px 25px 5px 25px;
+  
+    margin-left: -2%;
+   }
+   
+   ul {
+   
+    margin-left: 50px;
+   }
+
+      li a{
+    font-size: 0.7em;
+   }
+
+
 }
