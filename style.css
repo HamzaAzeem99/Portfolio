@@ -81,6 +81,7 @@ color: aliceblue;
  transform: scale(0.7);
   opacity: 0;
   animation: zoomIn 1.2s ease-out forwards;
+ border: 2px solid rgb(12, 202, 220);
   
     box-shadow: -2px 2px 70px #ffcc00;
     margin-top: -26px;
@@ -97,7 +98,7 @@ color: aliceblue;
     margin-left: 20%;
     margin-top: 100px;
     color: whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
+   
 }
 
 .text {
@@ -106,8 +107,9 @@ color: aliceblue;
     opacity: 0;
     animation-delay: 3s;
     animation: text 2s ease-out forwards;
-     font-family: cursive;
+     font-family: sans-serif;
      margin-top: -20px;
+     
 }
 @keyframes text {
     to{
@@ -132,6 +134,7 @@ color: aliceblue;
     margin-top: 60px;
     font-size: 2em;
      text-decoration: underline;
+     font-family: sans-serif;
 }
 .box img{
 
@@ -141,6 +144,7 @@ color: aliceblue;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    
    
 }
 .img1{
@@ -192,8 +196,9 @@ color: aliceblue;
     margin-top: 60px;
     font-size: 2em;
     text-decoration: underline;
-   
+    font-family: sans-serif;
 }
+
 .box2{
     display: flex;
     justify-content: center;
@@ -233,6 +238,7 @@ color: aliceblue;
     margin-top: 60px;
     font-size: 2em;
     text-decoration: underline;
+    font-family: sans-serif;
    
 }
 .box3 p{
@@ -321,6 +327,7 @@ color: #e5e7eb;
     gap: 50px;
     font-size: 2em;
     margin-top: 40px;
+    font-family: sans-serif;
 }
 .con p{
     color: white;
@@ -786,5 +793,21 @@ font-size: 0.7em;
     font-size: 0.7em;
    }
 
+
+
+}
+
+@media screen and (min-width: 300px) and (max-width: 442px) {
+    
+.port img{
+  margin-left: -1.2rem ;
+   
+}
+
+.text {
+    margin-left: -4em;
+ 
+     
+}
 
 }
