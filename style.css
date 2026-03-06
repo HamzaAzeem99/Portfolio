@@ -5,12 +5,15 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: white;
 }
 
 .container {
     width: 100vw;
     height: 100vh;
+}
+header{
+    width: 100vw;
 }
 
 ul {
@@ -20,14 +23,14 @@ ul {
     margin-top: -35px;
     gap: 40px;
     justify-content: center;
-    margin-left: 260px;
+    margin-left: 25%;
 }
 
 li a {
-    color: white;
-    font-size: 1em;
+    color: black;
+    font-size: 1.2vw;
     text-decoration: none;
- font-family: "Arvo", serif;
+ font-family: sans-serif;
   font-weight: 700;
   font-style: normal;
 
@@ -35,7 +38,7 @@ li a {
     
 }
 
-li a:visited {
+li a:hover {
     color: #ffcc00;
 
 }
@@ -43,9 +46,9 @@ li a:visited {
 nav img {
     width: 120px;
     height: 50px;
-    margin-right: 65%;
+    margin-left: 4%;
     margin-top: 8px;
-    animation: icon 5s linear infinite;
+    /* animation: icon 5s linear infinite;/ */
 }
 @keyframes icon {
     0%{ transform: rotateY( 0deg);}
@@ -53,13 +56,18 @@ nav img {
        100%{ transform: rotateY( 0deg);}
 }
 .btn1 {
-    padding: 10px 30px 10px 30px;
-    background-color: #ffcc00;
-color: aliceblue;
+    padding: 15px 30px;
+    background-color: black;
+color: white;
     border-radius: 20px;
     margin-left: 20%;
+    cursor: pointer;
     margin-top: -3px;
-    animation: btn 4s linear infinite;
+    /* animation: btn 4s linear infinite; */
+
+}
+.btn1:hover{
+    background-color: #ffcc00;
 
 }
 @keyframes btn {
@@ -70,20 +78,25 @@ color: aliceblue;
 
 .btn1 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 
+.btn1 a:hover {
+    color: black;
+}
+
+
 .port img {
-    width: 170px;
-    height: 250px;
-    border-radius: 60px;
- filter: drop-shadow(1px 6px 20px blue);
+    width: 280px;
+    height: 340px;
+    border-radius: 100%;
+ filter: drop-shadow(1px 6px 10px black);
  transform: scale(0.7);
   opacity: 0;
   animation: zoomIn 1.2s ease-out forwards;
- border: 2px solid rgb(12, 202, 220);
+ /* border: 2px solid rgb(12, 202, 220); */
   
-    box-shadow: -2px 2px 70px #ffcc00;
+    box-shadow: -2px 2px 30px black;
     margin-top: -26px;
 }
 @keyframes zoomIn {
@@ -97,18 +110,18 @@ color: aliceblue;
     display: flex;
     margin-left: 20%;
     margin-top: 100px;
-    color: whitesmoke;
    
 }
 
 .text {
-    margin-left: 1em;
+    margin-left:4rem;
     transform: scale(0.7);
     opacity: 0;
     animation-delay: 3s;
     animation: text 2s ease-out forwards;
      font-family: sans-serif;
-     margin-top: -20px;
+     margin-top: 20px;
+     font-size: 1.3vw;
      
 }
 @keyframes text {
@@ -126,13 +139,12 @@ color: aliceblue;
 }
 
 .contact {
-    color: aliceblue;
+    color: black;
 }
 .skills h1{
     text-align: center;
-    color: #e5e7eb;
+    color: black;
     margin-top: 60px;
-    font-size: 2em;
      text-decoration: underline;
      font-family: sans-serif;
 }
