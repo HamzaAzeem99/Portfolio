@@ -4,49 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Naruto Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Coda:wght@400;800&family=Domine:wght@400..700&family=Italianno&family=Jersey+10&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Love+Light&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-    <div class="container">
-        <header>
-            <nav>
-                <img src="./icons/logo.png" alt="">
-                <ul>
-
-
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skill.html">My Skills</a></li>
-                    <li><a href="hobby.html">My Hobby</a></li>
-                    <li><a href="my-projects.html">My Projects</a></li>
-
-                    <button type="submit" class="btn1"><a href="contact.html">Contact Me</a></button>
-
-                </ul>
-            </nav>
-        </header>
-        <div class="port">
-            <div class="my-img">
-                <img src="./images/image.png" alt="">
-            </div>
-            <div class="text">
-                <h4>Who Is Me?</h4>
-                <h1>Hi!</h1>
-                <h2>I’m M.Hamza <br>I’m a Front-End Web Developer.</h2>
-                <p>
-                    I have completed HTML and CSS and I’m currently learning JavaScript. <br>
-                    I enjoy creating clean, responsive, and user-friendly websites. <br>
-                    I’m continuously improving my skills by building <br>real-world projects.”</p>
-            </div>
+    <nav>
+        <div class="logo">HamzaAzeem</div>
+        <div class="nav-links" id="nav">
+            <a href="./index.html   ">Home</a>
+            <a href="./skill.html">Skills</a>
+            <a href="./my-projects.html">Projects</a>
+            <a href="./hobby.html">Hobby</a>
+            <a href="./by.html">Contact</a>
         </div>
-    </div>
+        <div class="group">
+            <!-- <span class="toggle" onclick="mode()">Mode</span> -->
+            <span class="menu" onclick="menu()">☰</span>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <img src="images/image.png">
+        <div class="hero-text">
+            <h1>Hi I'm <span>Hamza</span></h1>
+            <p> <strong>Front-End Developer ⚡</strong></p>
+            <p>I build powerful, modern, and visually stunning web experiences. <br>Focused on performance,
+                responsiveness, and clean design,<br> I turn ideas into interactive digital reality.</p>
+            <button class="btn">Download CV</button>
+        </div>
+    </section>
+
+
+
+    <script src="app.js">
+
+    </script>
 
 </body>
 

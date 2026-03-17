@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
     <div class="container">
-    <header>
-    <nav>
-        <img src="./icons/logo.png" alt="">
-        <ul>
-            
-           
-                <li><a href="index.html">Home</a></li>
-            <li><a href="skill.html">My Skills</a></li>
-            <li><a href="hobby.html">My Hobby</a></li>
-            <li><a href="my-projects.html">My Projects</a></li>
-            
-                <button type="submit" class="btn1"><a href="contact.html">Contact Me</a></button>
-        
-        </ul>
-    </nav>
-    </header>
-    <div class="pro">
-        <div class="my-pro">
-           <a href="https://hamzaazeem99.github.io/Paint-Website/" class="web1">Paint-Website</a> 
-           <a href="https://hamzaazeem99.github.io/Sneakers-Website/" class="web3">Sneakers-Website</a>
-           <a href="https://hamzaazeem99.github.io/Periodic-Table/" class="web3">Periodic-Table</a>
-           <a href="https://hamzaazeem99.github.io/My-Portfolio-/" class="web3">Sample-Portfolio</a>
-          
+        <nav>
+            <div class="logo">HamzaAzeem</div>
+            <div class="nav-links" id="nav">
+                <a href="./index.html">Home</a>
+                <a href="./skill.html">Skills</a>
+                <a href="./my-projects.html">Projects</a>
+                <a href="./hobby.html">Hobby</a>
+                <a href="./by.html">Contact</a>
+            </div>
+            <div class="group">
+                <!-- <span class="toggle" onclick="mode()">Mode</span> -->
+                <span class="menu" onclick="menu()">☰</span>
+            </div>
+        </nav>
+        <div class="pro">
+            <h1 class="pro-title">My Projects</h1>
 
+            <div class="my-pro">
+
+                <a target="_blank" href="https://hamzaazeem99.github.io/Microsoft-Clone/" class="web"><img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_512px.png" alt="" srcset=""> Microsoft Clone</a>
+
+                <a target="_blank" href="https://hamzaazeem99.github.io/CV-Generator/" class="web"><img src="https://cdn-icons-png.flaticon.com/512/2666/2666421.png" alt=""> CV Generator</a>
+
+                <a target="_blank" href="https://hamzaazeem99.github.io/Background-Remover/" class="web"><img src="https://www.techsmith.com/wp-content/uploads/2023/07/remove-background-image.png" alt=""> Background-Remover</a>
+
+                <!-- <a target="_blank" href="https://hamzaazeem99.github.io/My-Portfolio-/" class="web">💼 Portfolio</a> -->
+
+            </div>
+
+            <p class="pro-text">I’ve built multiple projects — these are some of my best work.</p>
         </div>
-        <br><br><br>
-        <p style="text-align: center; color: red;">I Made Many Projects,This Is Samples</p>
-    </div>
     </div>
 </body>
+<script src="app.js"></script>
+
 </html>

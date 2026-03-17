@@ -5,42 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-   <header>
-    <nav>
-        <img src="./icons/logo.png" alt="">
-        <ul>
-            
-           
-                <li><a href="index.html">Home</a></li>
-            <li><a href="skill.html">My Skills</a></li>
-            <li><a href="hobby.html">My Hobby</a></li>
-            <li><a href="my-projects.html">My Projects</a></li>
-            
-                <button type="submit" class="btn1"><a href="contact.html">Contact Me</a></button>
-        
-        </ul>
-    </nav>
-    </header>
-    <div class="hobby">
-        <h1>My Hobby</h1>
-        <div class="box3">
-<p>I am a passionate AI Game Developer who loves creating interactive games using HTML, CSS, and JavaScript. Game logic, animations, and creative gameplay inspire me to learn and build better projects</p>
-
+   <nav>
+        <div class="logo">HamzaAzeem</div>
+        <div class="nav-links" id="nav">
+            <a href="./index.html   ">Home</a>
+            <a href="./skill.html">Skills</a>
+            <a href="./my-projects.html">Projects</a>
+            <a href="./hobby.html">Hobby</a>
+            <a href="./by.html">Contact</a>
         </div>
+        <div class="group">
+            <!-- <span class="toggle" onclick="mode()">Mode</span> -->
+            <span class="menu" onclick="menu()">☰</span>
+        </div>
+    </nav>
+    <!-- hai -->
+<div class="hobby">
+  <h1>🎮 My Hobby</h1>
+
+  <div class="box3">
+    <p>
+      I am a passionate Game Developer who loves building interactive games <br>
+      using HTML, CSS, and JavaScript. I enjoy creating smooth animations, <br>
+      smart logic, and fun gameplay experiences.
+    </p>
+  </div>
+
+  <div class="game">
+
+    <div class="game-card">
+      <img src="./images/flappy.jpg">
+      <a href="https://hamzaazeem99.github.io/Flappy-Bird-Game/" target="_blank">PLAY</a>
     </div>
 
-    <div class="game">
-    
-        <div> <img src="./images/flappy.jpg" alt=""  class=" first game1"> <a href="https://hamzaazeem99.github.io/Flappy-Bird-Game/"> <button class="p1">PLAY</button></a></div>
-
-        <div><img src="./images/car.jpg" alt=""  class=" first game1"> <a href="https://hamzaazeem99.github.io/Car-Game/"> <button class="p2">PLAY</button></a></div>
-
-        <div ><a href="https://hamzaazeem99.github.io/Tic-Tac-Toe-Game/"><img src="./images/tic.jpg" alt=""  class=" first game1"> <a href="https://hamzaazeem99.github.io/Tic-Tac-Toe-Game/"><button class="p3">PLAY</button> </a></div>
+    <div class="game-card">
+      <img src="./images/car.jpg">
+      <a href="https://hamzaazeem99.github.io/Car-Game/" target="_blank">PLAY</a>
     </div>
+
+    <div class="game-card">
+      <img src="./images/tic.jpg">
+      <a href="https://hamzaazeem99.github.io/Tic-Tac-Toe-Game/" target="_blank">PLAY</a>
+    </div>
+
+  </div>
+</div>
+    <!-- kuch -->
 
    </div>
 </body>
+<script src="app.js"></script>
+
 </html>
