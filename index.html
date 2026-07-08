@@ -4,49 +4,420 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza Azeem</title>
-<link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20250210/ourmid/pngtree-logo-template-for-esports-vector-illustration-of-a-lion-combination-red-png-image_15440797.png" type="image/x-icon">
-
+    <title>Hamza Azeem | Portfolio</title>
+    <link rel="shortcut icon"
+        href="https://png.pngtree.com/png-vector/20250210/ourmid/pngtree-logo-template-for-esports-vector-illustration-of-a-lion-combination-red-png-image_15440797.png"
+        type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
 
     <nav>
-        <div class="logo">HamzaAzeem</div>
-        <div class="nav-links" id="nav">
-            <a href="./index.html   ">Home</a>
-            <a href="./skill.html">Skills</a>
-            <a href="./my-projects.html">Projects</a>
-            <a href="./hobby.html">Hobby</a>
-            <a href="./by.html">Contact</a>
+        <div class="logo">Hamza<span>Azeem</span></div>
+        <div class="nav-right-wrapper">
+            <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+                🌙 <span id="themeText">Dark</span>
+            </button>
+            <button class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        <div class="group">
-            <!-- <span class="toggle" onclick="mode()">Mode</span> -->
-            <span class="menu" onclick="menu()">☰</span>
+        <div class="nav-links" id="nav">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#hobbies" class="nav-item">Hobby</a>
+            <a href="#contact" class="nav-item">Contact</a>
         </div>
     </nav>
 
-    <section class="hero">
-        <img src="images/image.png">
+    <section id="home" class="hero">
+        <div class="hero-img-container">
+            <img src="https://avatars.githubusercontent.com/u/241596615?v=4" alt="Hamza Azeem">
+        </div>
         <div class="hero-text">
             <h1>Hi I'm <span>Hamza</span></h1>
-            <p> <strong>Front-End Developer ⚡</strong></p>
-            <p>I build powerful, modern, and visually stunning web experiences. <br>Focused on performance,
-                responsiveness, and clean design,<br> I turn ideas into interactive digital reality.</p>
-            <button class="btn">Download CV</button>
+            <div class="role-wrapper">
+                I am a <span class="role-text" id="typewriter"></span>
+            </div>
+            <a href="#contact" class="btn">Hire Me</a>
         </div>
     </section>
 
+    <section id="skills">
+        <h1 class="section-title">Skills & Capabilities</h1>
+        <p class="section-subtitle">In tech stacks par meri command hai aur me inme innovative projects banata hu.</p>
 
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <span class="skill-percentage">95%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" data-progress="95%"></div>
+                </div>
+            </div>
 
-    <script src="app.js">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" data-progress="90%"></div>
+                </div>
+            </div>
 
-    </script>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-info">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" data-progress="85%"></div>
+                </div>
+            </div>
 
+            <div class="skill-card">
+                <div class="skill-header">
+                    <div class="skill-info">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="C++">
+                        <span class="skill-name">React JS</span>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="progress-bar-wrap">
+                    <div class="progress-bar" data-progress="80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="font-size: 24px; margin-top: 60px; margin-bottom: 10px;">Tools & Ecosystem</h2>
+        <p class="section-subtitle" style="margin-bottom: 30px;">Workflow ko fast aur control karne ke liye tools.</p>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Git">
+                <p>Git & GitHub</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="VS Code">
+                <p>VS Code</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="tool-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732228.png" alt="Chrome DevTools">
+                <p>DevTools</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="section-title">Featured Projects</h1>
+        <p class="section-subtitle">Kuch behtareen web clones aur production-ready tools jo maine develop kiye hain.</p>
+        <h2>CLONES:- </h2><br>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://mailmeteor.com/logos/assets/PNG/Microsoft_Logo_512px.png" alt="Microsoft">
+                        <h3 class="project-title">Microsoft Clone</h3>
+                    </div>
+                    <p class="project-desc">Microsoft official homepage ka pixel-perfect high performance ui clone jo
+                        robust responsive structures ko show karta hai.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hamzaazeem99.github.io/Microsoft-Clone/" target="_blank"
+                            class="p-btn demo">Live Demo</a>
+                        <a href="https://github.com/hamzaazeem99/Microsoft-Clone" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/3840px-YouTube_full-color_icon_%282017%29.svg.png"
+                            alt="CV">
+                        <h3 class="project-title">Youtube-Clone</h3>
+                    </div>
+                    <p class="project-desc">A high-performance YouTube UI clone engineered with semantic HTML5 and
+                        advanced CSS (Grid/Flexbox). Features a fully responsive grid system, micro-interactions, dark
+                        mode toggle, and an optimized modular architecture for a seamless multimedia browsing experience
+                        across all screen devices.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hamzaazeem99.github.io/Youtube-Clone/" target="_blank" class="p-btn demo">Live
+                            Demo</a>
+                        <a href="https://github.com/hamzaazeem99/Youtube-Clone" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="BG">
+                        <h3 class="project-title">GitHub Login Page</h3>
+                    </div>
+                    <p class="project-desc">A pixel-perfect frontend replica of the official GitHub authentication
+                        portal. Built with semantic HTML5 and customized CSS variables, it features exact form
+                        validation structures, dynamic brand typography, fluid accessibility layouts, and full
+                        responsive alignment ensuring a seamless security interface on any device.</p>
+                    <div class="project-tags">
+                        <span class="tag">UI</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">Clean Code</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hamzaazeem99.github.io/GitHub-login-page/" target="_blank"
+                            class="p-btn demo">Live Demo</a>
+                        <a href="https://github.com/hamzaazeem99/GitHub-login-page" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <h2>TOOLS:- </h2><br>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://www.techsmith.com/wp-content/uploads/2023/07/remove-background-image.png"
+                            alt="BG">
+                        <h3 class="project-title">Background Remover</h3>
+                    </div>
+                    <p class="project-desc">An AI-powered web utility designed to seamlessly strip backgrounds from
+                        images instantly. Built with modern JavaScript and integrated with production-ready APIs, it
+                        features a clean drag-and-drop file upload zone and real-time processing indicators.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">Async/Await</span>
+                        <span class="tag">UX Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hamzaazeem99.github.io/Background-Remover/" target="_blank"
+                            class="p-btn demo">Live Demo</a>
+                        <a href="https://github.com/hamzaazeem99/Background-Remover" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4474/4474794.png" alt="To-Do List">
+                        <h3 class="project-title">To-Do List Mini App</h3>
+                    </div>
+                    <p class="project-desc">A smart, lightweight task management application designed for optimal daily
+                        productivity. Built with pure vanilla JavaScript, it features dynamic CRUD operations,
+                        interactive task-state toggles, and seamless browser LocalStorage integration to retain data
+                        across sessions.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">DOM Manipulation</span>
+                        <span class="tag">LocalStorage</span>
+                        <span class="tag">UX/UI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hamzaazeem99.github.io/To-Do-list-mini-app/" target="_blank"
+                            class="p-btn demo">Live Demo</a>
+                        <a href="https://github.com/hamzaazeem99/To-Do-list-mini-app" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Weather App">
+                        <h3 class="project-title">Weather App</h3>
+                    </div>
+                    <p class="project-desc">A dynamic, real-time weather forecasting application that delivers precise
+                        atmospheric data globally. Built with vanilla JavaScript, it integrates third-party weather APIs
+                        using asynchronous fetch requests to map live temperature, humidity, wind speeds, and adaptive
+                        condition graphics.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">JSON Parsing</span>
+                        <span class="tag">Asynchronous JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://hamzaazeem99.github.io/Weather-App/" target="_blank" class="p-btn demo">Live
+                            Demo</a>
+                        <a href="https://github.com/hamzaazeem99/Weather-App" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <h2>REAL TIME PROJECTS:- </h2><br>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3616/3616223.png" alt="Mulaqatein">
+                        <h3 class="project-title">Mulaqatein Web App</h3>
+                    </div>
+                    <p class="project-desc">A modern, fully responsive web application engineered for interactive social
+                        networking and connectivity. Featuring a highly polished user interface built with advanced
+                        layouts, sleek micro-animations, and dynamic component rendering to deliver a fluid chat or
+                        meeting ecosystem.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Netlify Deployment</span>
+                        <span class="tag">Responsive UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://mulaqatein.netlify.app/" target="_blank" class="p-btn demo">Live Demo</a>
+                        <!-- <a href="https://github.com/hamzaazeem99" target="_blank" class="p-btn code">GitHub</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://gloweditor.vercel.app/icons/image.png" alt="Glow Editor">
+                        <h3 class="project-title">Glow Editor</h3>
+                    </div>
+                    <p class="project-desc">An aesthetic, feature-rich web-based text and code editor tailored for
+                        developers and content creators. Engineered with modular frontend architectures, it features
+                        syntax highlighting placeholders, live text manipulation, dynamic style overlays, and full
+                        Vercel edge deployment architecture.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">UI Components</span>
+                        <span class="tag">Vercel Deploy</span>
+                        <span class="tag">Text Engine</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://gloweditor.vercel.app/" target="_blank" class="p-btn demo">Live Demo</a>
+                        <!-- <a href="https://github.com/hamzaazeem99" target="_blank" class="p-btn code">GitHub</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-body">
+                    <div class="project-header">
+                        <img src="https://images.icon-icons.com/844/PNG/512/CSS3_icon-icons.com_67069.png"
+                            alt="CSS Framework">
+                        <h3 class="project-title">Custom CSS Framework</h3>
+                    </div>
+                    <p class="project-desc">A proprietary, lightweight, and production-ready utility-first CSS framework
+                        hosted via GitHub CDN. Engineered to accelerate frontend workflows with pre-compiled layout
+                        structures, scalable typography matrices, semantic components, and fully responsive flex/grid
+                        utilities.</p>
+                    <div class="project-tags">
+                        <span class="tag">CSS3 Architecture</span>
+                        <span class="tag">Open Source</span>
+                        <span class="tag">CDN Deployment</span>
+                        <span class="tag">Utility-First</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/HamzaAzeem99/css-framework/blob/main/css/framework.css"
+                            target="_blank" class="p-btn demo">View
+                            Source</a>
+                        <a href="https://github.com/HamzaAzeem99/css-framework" target="_blank"
+                            class="p-btn code">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; width: 100%;">
+            <a href="https://github.com/hamzaazeem99" target="_blank" class="btn"
+                style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 35px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
+                    style="width: 18px; height: 18px; filter: brightness(0);">
+                <span>More Projects on GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h1 class="section-title">🎮 Hobbies & Games</h1>
+        <p class="section-subtitle">Mujhe core programming languages se real-time dynamic web games banana pasand hai.
+        </p>
+        <div class="game">
+            <div class="game-card">
+                <img src="https://generous-plum-tn24ok42zy.edgeone.app/Screenshot%202026-05-22%20211618.png"
+                    alt="Flappy Bird">
+                <a href="https://3d-flappy-bird-game.netlify.app" target="_blank">PLAY</a>
+            </div>
+            <div class="game-card">
+                <img src="https://attractive-white-5bqgfpyaeu.edgeone.app/Screenshot%202026-05-22%20212151.png"
+                    alt="Car Game">
+                <a href="https://hamzaazeem99.github.io/open-world-game/" target="_blank">PLAY</a>
+            </div>
+        </div>
+                <div style="text-align: center; margin-top: 50px; width: 100%;">
+            <a href="https://github.com/hamzaazeem99" target="_blank" class="btn"
+                style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 35px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"
+                    style="width: 18px; height: 18px; filter: brightness(0);">
+                <span>More Games on GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="section-title">Contact Me</h1>
+        <p class="section-subtitle">Koi suggestion ho ya project discuss karna ho? Drop a message!</p>
+        <form class="contact-form" action="https://formspree.io/f/your_id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>📧 Email: <a href="mailto:hamzaazeem.bwp@gmail.com">hamzaazeem.bwp@gmail.com</a></p>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/hamzaazeem99" target="_blank"><img
+                    src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 Hamza Azeem. All Rights Reserved. Designed with Cyber Tech Vibe.
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
