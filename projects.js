@@ -1,0 +1,26 @@
+/* ===== EDIT YOUR CONTENT HERE ===== */
+const TYPE = { web: 'Web', game: 'Game', ai: 'AI', ad: 'AI Ad', film: 'AI Film', reel: 'Reel', short: 'Short' };
+
+// type: web | game | ai.  sub (web): 'app' | 'ui'.  stack: add 'MERN','React','Backend' when true.
+// img: your own screenshot path. If omitted, a live screenshot of `live` is used.
+const P = [
+    { id: 'mq', type: 'web', sub: 'app', feat: 1, title: 'Mulaqatein Web App', icon: './assets/images/mulaqat.png', live: 'https://mulaqatein.netlify.app/', tech: ['HTML5', 'CSS3', 'JavaScript', 'Netlify'], desc: 'A fully responsive web app for social networking and connecting, with a polished interface, micro-animations and dynamic component rendering.' },
+    { id: 'ge', type: 'web', sub: 'app', feat: 1, title: 'Glow Editor', icon: 'https://gloweditor.vercel.app/icons/image.png', live: 'https://gloweditor.vercel.app/', tech: ['JavaScript', 'UI Components', 'Vercel'], desc: 'A web-based text and code editor for developers and creators, with live text manipulation and dynamic style overlays, deployed on Vercel.' },
+    { id: 'wx', type: 'web', sub: 'app', feat: 1, title: 'Weather App', icon: 'https://cdn-icons-png.flaticon.com/512/4814/4814268.png', live: 'https://hamzaazeem99.github.io/Weather-App/', gh: 'https://github.com/hamzaazeem99/Weather-App', tech: ['JavaScript', 'REST API', 'Async/Await', 'JSON'], desc: 'Live weather for cities worldwide. Fetches a third-party weather API and shows temperature, humidity, wind and condition graphics.' },
+    { id: 'td', type: 'web', sub: 'app', title: 'To-Do List Mini App', icon: 'https://cdn-icons-png.flaticon.com/512/4474/4474794.png', live: 'https://hamzaazeem99.github.io/To-Do-list-mini-app/', gh: 'https://github.com/hamzaazeem99/To-Do-list-mini-app', tech: ['JavaScript', 'DOM', 'LocalStorage'], desc: 'A lightweight task manager in vanilla JavaScript with add, edit, delete and complete, saved in the browser between sessions.' },
+    { id: 'ms', type: 'web', sub: 'ui', title: 'Microsoft Clone', icon: './assets/images/microsoft.png', live: 'https://hamzaazeem99.github.io/Microsoft-Clone/', gh: 'https://github.com/hamzaazeem99/Microsoft-Clone', tech: ['HTML5', 'CSS Grid', 'Responsive'], desc: 'A pixel-accurate, responsive clone of the Microsoft homepage.' },
+    { id: 'yt', type: 'web', sub: 'ui', title: 'YouTube Clone', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/512px-YouTube_full-color_icon_%282017%29.svg.png', live: 'https://hamzaazeem99.github.io/Youtube-Clone/', gh: 'https://github.com/hamzaazeem99/Youtube-Clone', tech: ['HTML5', 'CSS Grid', 'Flexbox', 'Responsive'], desc: 'A responsive YouTube UI clone with a video grid, micro-interactions and a dark mode toggle.' },
+    { id: 'gl', type: 'web', sub: 'ui', title: 'GitHub Login Page', icon: 'https://cdn-icons-png.flaticon.com/512/25/25231.png', live: 'https://hamzaazeem99.github.io/GitHub-login-page/', gh: 'https://github.com/hamzaazeem99/GitHub-login-page', tech: ['HTML5', 'CSS3', 'Responsive'], desc: 'A faithful, responsive replica of the GitHub sign-in page.' },
+    { id: 'cf', type: 'web', sub: 'ui', title: 'Custom CSS Framework', icon: 'https://images.icon-icons.com/844/PNG/512/CSS3_icon-icons.com_67069.png', gh: 'https://github.com/HamzaAzeem99/css-framework', tech: ['CSS3', 'Open Source', 'CDN'], desc: 'A lightweight utility-first CSS framework served from GitHub, with layout, typography and responsive flex/grid helpers.' },
+    { id: 'ff', type: 'game', feat: 1, title: '3D Flappy Bird', img: 'https://generous-plum-tn24ok42zy.edgeone.app/Screenshot%202026-05-22%20211618.png', live: 'https://3d-flappy-bird-game.netlify.app', tech: ['JavaScript', 'HTML5', 'CSS'], tags: ['Web Games', '3D'], desc: 'A 3D take on Flappy Bird that runs in the browser.' },
+    { id: 'ow', type: 'game', feat: 1, title: 'Open World Car Game', img: 'https://attractive-white-5bqgfpyaeu.edgeone.app/Screenshot%202026-05-22%20212151.png', live: 'https://hamzaazeem99.github.io/open-world-game/', tech: ['JavaScript', 'HTML5', 'CSS'], tags: ['Web Games'], desc: 'An open-world driving game you play in the browser.' },
+    { id: 'br', type: 'ai', feat: 1, title: 'AI Background Remover', icon: 'https://www.techsmith.com/wp-content/uploads/2023/07/remove-background-image.png', live: 'https://hamzaazeem99.github.io/Background-Remover/', gh: 'https://github.com/hamzaazeem99/Background-Remover', tech: ['JavaScript', 'AI API', 'Async/Await'], desc: 'Removes image backgrounds in seconds. I built the drag-and-drop upload, the API integration and the processing indicator; the AI model runs through a third-party API.' }
+];
+
+// AI ads / films / reels / shorts. Add real ones only.
+// {id:'v1',type:'ad'|'film'|'reel'|'short',title:'',desc:'',tools:['Tool A','Tool B'],
+//  src:'assets/videos/name.mp4',poster:'assets/videos/name.jpg', url:'https://youtube.com/... or instagram link', feat:1}
+const V = [];
+
+// Timeline entries: {when:'2025',title:'',where:'',text:''}
+const JOURNEY = [], EDU = [];
